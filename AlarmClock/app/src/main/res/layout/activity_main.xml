@@ -1,0 +1,72 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="#deb887">
+
+
+
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alarmTimePicker"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#8ffdba" />
+
+
+    <ToggleButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Alarm On/Off"
+    android:id="@+id/alarmToggle"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/alarmTimePicker"
+    android:onClick="onToggleClicked"
+        android:checked="false"
+        android:background="#000000"
+        android:focusable="true"
+        android:textColor="#f3f6ff"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp" />
+
+
+
+    <TextView
+        android:layout_width="258dp"
+        android:layout_height="match_parent"
+
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:id="@+id/alarmText"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/alarmToggle"
+        android:background="#0e8146"
+        android:layout_marginBottom="80dp"
+        android:textColor="#ff0000" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Share On Facebook"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#3B5998"
+        android:layout_marginBottom="10dp"
+        android:focusable="true"
+        android:shadowColor="#b0e0e6"
+        android:textColor="#00ff80"
+        android:textStyle="bold" />
+
+</RelativeLayout>
