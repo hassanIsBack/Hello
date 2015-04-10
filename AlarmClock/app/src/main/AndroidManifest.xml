@@ -7,6 +7,10 @@
 
 
     <application
+    <html>
+        
+        
+    </application>
 
         android:allowBackup="true"
         android:icon="@drawable/icon_updated"
